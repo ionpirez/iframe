@@ -62,4 +62,18 @@ function launchWindow(id) {
 		$(id).fadeIn(2000); 
 	
 
+$(".row").click(function(event) {
+	var id = this.id;
+	$(".row").css({
+			'background-color' : 'black',
+			'z-index' : '1'
+		});
+	$(this).css({
+			'background-color' : 'grey',
+			'z-index' : '-1'
+		});
+	$(".animation").fadeOut('slow');
+	$("."+id).fadeIn('slow');
+});
+
 }

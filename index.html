@@ -21,13 +21,25 @@
   <div id="mask"></div>
 </div>
 	<div id="wrapper">
-		<div id="aside">
-			<div class="row"></div>
-			<div class="row"></div>
-			<div class="row"></div>
-		</div>
-		<div id="frame-holder">
-			<iframe src="http://www.facebook.com" frameborder="0"></iframe>
+		<div id="holder">
+			<div id="aside">
+				<div class="row" id="buzzmometer"></div>
+				<div class="row" id="tweetdeck"></div>
+				<div class="row" id="trendsmap"></div>
+				<div id="logout">
+				</div>
+			</div>
+			<div id="frame-holder">
+				<div class="buzzmometer animation">
+					<iframe src="http://buzzmometer.com/" frameborder="0"></iframe>
+				</div>
+				<div class="tweetdeck animation">
+					<iframe src="https://tweetdeck.twitter.com/" frameborder="0"></iframe>
+				</div>
+				<div class="trendsmap animation">
+					<iframe src="http://www.trendsmap.com/" frameborder="0"></iframe>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
