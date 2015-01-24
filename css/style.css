@@ -93,7 +93,9 @@
   height: 100%;
   position: absolute;
   display: none;
-  background-color: #0ff;
+}
+#wrapper #holder #frame-holder .buzzmometer {
+  display: block;
 }
 #mask {
   position: absolute;
@@ -110,6 +112,35 @@
   display: none;
   z-index: 9999;
   padding: 20px;
+}
+#boxes .window .box {
+  background-color: #fff;
+  border: 1px solid #808080;
+  min-width: 320px;
+  padding-bottom: 10px;
+  position: relative;
+}
+#boxes .window .box .box-logo {
+  background-image: url("img/postech.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 150px;
+}
+#boxes .window .box .login-inputs {
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}
+#boxes .window .box input {
+  background-color: #fff;
+  border: 1px solid #808080;
+  outline: none;
+  border-radius: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  display: block;
 }
 #frame-holder #hmacontainer,
 #frame-holder #hmaspacer {
