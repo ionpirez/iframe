@@ -23,7 +23,7 @@
   min-height: 50px;
   border-top: 1px solid #808080;
 }
-#wrapper #holder #aside .row:nth-child(3) {
+#wrapper #holder #aside .row:nth-child(4) {
   border-bottom: 1px solid #808080;
 }
 #wrapper #holder #aside .row:first-child {
@@ -43,6 +43,12 @@
 }
 #wrapper #holder #aside #trendsmap {
   background-image: url("img/trends.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+#wrapper #holder #aside #hootsuite {
+  background-image: url("img/hootsuite.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px;
@@ -81,19 +87,13 @@
 }
 #wrapper #holder #frame-holder .trendsmap,
 #wrapper #holder #frame-holder .tweetdeck,
-#wrapper #holder #frame-holder .buzzmometer {
+#wrapper #holder #frame-holder .buzzmometer,
+#wrapper #holder #frame-holder .hootsuite {
   width: 100%;
   height: 100%;
   position: absolute;
   display: none;
   background-color: #0ff;
-}
-#wrapper #holder #frame-holder .tweetdeck {
-  background-color: #ffdead;
-}
-#wrapper #holder #frame-holder .buzzmometer {
-  background-color: #ff6347;
-  display: block;
 }
 #mask {
   position: absolute;
@@ -110,4 +110,8 @@
   display: none;
   z-index: 9999;
   padding: 20px;
+}
+#frame-holder #hmacontainer,
+#frame-holder #hmaspacer {
+  display: none !important;
 }
